@@ -1,0 +1,48 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.activity {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Arial';
+}
+
+
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: black;
+  padding: 10px 20px 10px 20px;
+  border: dotted white 3px;
+  text-decoration: none;
+  float: right;
+  font-family: 'Audiowide', cursive;
+  
+}
+
+.btn:hover {
+  background: #3cfc7f;
+  background-image: -webkit-linear-gradient(top, #3cfc7f, #3ec4e6);
+  background-image: -moz-linear-gradient(top, #3cfc7f, #3ec4e6);
+  background-image: -ms-linear-gradient(top, #3cfc7f, #3ec4e6);
+  background-image: -o-linear-gradient(top, #3cfc7f, #3ec4e6);
+  background-image: linear-gradient(to bottom, #3cfc7f, #3ec4e6);
+  text-decoration: none;
+}
+
+.blargh {
+    background: black;
+    }
