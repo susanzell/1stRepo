@@ -5,70 +5,62 @@
   <link href='http://fonts.googleapis.com/css?family=Crafty+Girls|Oswald:300|Audiowide|Alegreya:900' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link href="circuitstyle.css" rel="stylesheet">
-   <?php
-  echo "<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Crafty+Girls|Oswald:300|Audiowide|Alegreya:900'/>";
-  echo "<link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>";
-  
-  echo "<link href='circuitstyle.css' rel='stylesheet'>";
-	?>
+  <!--<script type="text/javascript" src="circuitapp.js"></script>-->
+  <!--<script src ="jquery-1.11.2.js"></script>-->
+
   </head>
   
   <body class="blargh">
+  <script type="text/javascript">
   
-  <div class = "container">
-    <div class="activity">
-      
-       <script type="text/javascript">
-       
-  //var main = function() {
-	//$('.btn').click(function(event) {
-   // var main = function() {
+	$(document).ready(function(){
+		$('.btn').click(function(event) {
+	
  
-       var number = randomInRange(2, 12);  
-       var exercise = exercisePicker();
+		var number = randomInRange(2, 12);  
+		var exercise = exercisePicker();
        
        
-        function randomInRange(min, max) {
-        return Math.floor(Math.random()*(max-min+1)+min);
-        };
+			function randomInRange(min, max) {
+			return Math.floor(Math.random()*(max-min+1)+min);
+			};
         
     
-       function exercisePicker() {
-           var num = randomInRange(1, 5);
-           switch(num) {
+		function exercisePicker() {
+			var num = randomInRange(1, 5);
+			switch(num) {
                case 1: return "squats"; break;
                case 2: return "lunges"; break;
                case 3: return "push-ups"; break;
                case 4: return "sit-ups"; break;
                case 5: return "mountain climbers"; break;
            };
-       };
+		};
+		document.getElementById('activity').innerHTML = ("Do " + number + " " + exercise + ".");
+
+	  });
+	});
        
-	   document.write("Do " + number + " " + exercise + ".");
-	//   };
-       
-	 // };
+
 	
-    // $(document).ready(main);
-	// $('.btn').click(main);
-       </script>
+  
+   </script>
+  <div class = "container">
+    <p id="activity">
+     Press Next to start workout!
+
       
        
-    </div>
+    </p>
 	 
     <span class="btn">Next</span>
    </div>
+   
+          
+
+	
   </body>
-  <script type="text/javascript">
-  //   $(document).ready(function() {
-  //
-//		$('.btn').click(function(event) {
-	//		document.write("click");
-	//		});
-	//	});
-	 
-	 
-   </script>
+
 </html>
 
 
